@@ -27,4 +27,6 @@ ventas.groupby("region").sum("ventas")
 ventas_per_region = ventas.groupby("region").sum("ventas")
 print(ventas_per_region)
 
+print(ventas_per_region["ventas"].idxmax())
+
 
